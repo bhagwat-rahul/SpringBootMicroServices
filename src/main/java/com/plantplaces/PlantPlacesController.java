@@ -6,8 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller 
 public class PlantPlacesController {
 	
-	@RequestMapping("/start")
-	public String start() {
+	/**
+	 * Handle the /start endpoint.
+	 * @return
+	 */
+	@RequestMapping("/")
+	public String index() {
 		return "start";
 	}
 
